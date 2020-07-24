@@ -1,0 +1,21 @@
+{
+  "name": "bdayutils",
+  "version": "1.0.0",
+  "description": "Small utility bot for surprises",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --project tsconfig.json && tscpaths -p tsconfig.json -s ./src -o ./dist"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "dependencies": {
+    "@types/deep-equal": "^1.0.1",
+    "@types/node": "^14.0.24",
+    "@types/ws": "^7.2.6",
+    "discord.js": "^12.2.0",
+    "eslint": "^7.5.0",
+    "tscpaths": "0.0.9",
+    "typescript": "^3.9.7"
+  }
+}
