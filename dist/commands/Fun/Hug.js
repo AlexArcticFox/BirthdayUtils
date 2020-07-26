@@ -16,7 +16,7 @@ class Boop extends Command_1.default {
             return;
         }
         const member = args[0];
-        event.send(`${event.message.author.username} hugs ${member.user.username}`);
+        event.send(`${event.message.author} hugs ${member.user}`);
     }
 }
 exports.default = Boop;

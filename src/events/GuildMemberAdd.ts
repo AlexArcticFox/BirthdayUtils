@@ -2,7 +2,7 @@ import Event from "@event/Event";
 import BotClient from "~/BotClient";
 import { GuildMember, TextChannel } from "discord.js";
 
-export const event = new Event("message", async (_client: BotClient, member: GuildMember) => {
+export const event = new Event("guildMemberAdd", async (_client: BotClient, member: GuildMember) => {
     if (member.id !== _client.config.special) {
         return;
     }

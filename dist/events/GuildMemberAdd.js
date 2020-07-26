@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.event = void 0;
 const Event_1 = __importDefault(require("../event/Event"));
-exports.event = new Event_1.default("message", async (_client, member) => {
+exports.event = new Event_1.default("guildMemberAdd", async (_client, member) => {
     if (member.id !== _client.config.special) {
         return;
     }
